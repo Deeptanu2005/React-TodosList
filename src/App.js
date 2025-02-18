@@ -61,7 +61,7 @@ function App() {
       <Router>
         <Header title="MyTodosList" searchBar={true} />
         <Routes>
-          <Route path="/" element={
+          <Route path="/React-TodosList" element={
             <>
               <AddTodo addTodo={addTodo} />
               <Todos todos={todos} onDelete={onDelete} />
