@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Route baseName="/home">
+      <Router baseName="/home">
         <Header title="MyTodosList" searchBar={false} />
         <Routes>
           <Route path="/React-TodosList/home" element={
@@ -70,7 +70,7 @@ function App() {
           <Route path="/React-TodosList/about" element={<About />}></Route>
         </Routes>
         <Footer />
-      </Route>
+      </Router>
     </>
   );
 }
