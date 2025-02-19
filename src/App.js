@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/">
+      <Router>
         <Header title="MyTodosList" searchBar={false} />
         <Routes>
           <Route path="/React-TodosList" element={
