@@ -58,16 +58,16 @@ function App() {
 
   return (
     <>
-      <Router baseName="/home">
-        <Header title="MyTodosList" searchBar={false} />
+      <Router>
+        <Header title="MyTodosList" searchBar={true} />
         <Routes>
-          <Route path="/React-TodosList/home" element={
+          <Route path="/React-TodosList" element={
             <>
               <AddTodo addTodo={addTodo} />
               <Todos todos={todos} onDelete={onDelete} />
             </>}>
           </Route>
-          <Route path="/React-TodosList/about" element={<About />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
         <Footer />
       </Router>
